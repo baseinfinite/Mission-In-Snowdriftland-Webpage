@@ -1,11 +1,12 @@
 <script>
     window.RufflePlayer = window.RufflePlayer || {};
-    window.addEventListener("load", (event) => {
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        const container = document.getElementById("container");
+
+    window.addEventListener("DOMContentLoaded", () => {
+        let ruffle = window.RufflePlayer.newest();
+        let player = ruffle.createPlayer();
+        let container = document.getElementById("container");
         container.appendChild(player);
-        player.load("https://github.com/AD1340/Mission-In-Snowdriftland-Webpage/blob/main/misnowdriftland_final.swf");
+        player.load("movie.swf");
     });
 </script>
-<script src="https://github.com/AD1340/Mission-In-Snowdriftland-Webpage/blob/main/ruffle-nightly-2023_08_05-web-selfhosted/ruffle.js"></script>
+<script src="path/to/ruffle/ruffle.js"></script>
